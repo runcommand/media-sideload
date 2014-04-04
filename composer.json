@@ -1,0 +1,20 @@
+{
+    "name": "danielbachhuber/wp-cli-media-sideload-command",
+    "description": "Sideload external media into WordPress",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Bachhuber",
+            "email": "daniel@handbuilt.co",
+            "homepage": "http://handbuilt.co",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+
+    },
+    "autoload": {
+        "files": [ "wp-cli-media-sideload-command.php" ]
+    }
+}
