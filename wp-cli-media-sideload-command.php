@@ -1,24 +1,25 @@
 <?php
 
-class Media_Sideload_Command extends WP_CLI_Command {
+/**
+ * Sideload media into WordPress
+ */
+class WP_CLI_Media_Sideload_Command extends WP_CLI_Command {
 
 	/**
-	 * Sideload embedded media, and update post references.
+	 * Sideload embedded images, and update post references.
 	 * 
 	 * ## OPTIONS
 	 * 
 	 * --domain=<domain>
-	 * : Only sideload media hosted on a specific domain.
+	 * : Only sideload images hosted on a specific domain.
 	 * 
 	 * [--post_type=<post-type>]
-	 * : Only sideload media embedded in a specific post type.
+	 * : Only sideload images embedded in a specific post type.
 	 * 
 	 * [--verbose]
 	 * : Show more information about the process on STDOUT.
-	 * 
-	 * @subcommand sideload
 	 */
-	public function sideload( $args, $assoc_args ) {
+	public function images( $args, $assoc_args ) {
 		global $wpdb;
 
 		$defaults = array(
@@ -127,3 +128,5 @@ class Media_Sideload_Command extends WP_CLI_Command {
 	}
 
 }
+
+WP_CLI::add_command( 'media sideload', 'WP_CLI_Media_Sideload_Command' );
