@@ -16,5 +16,10 @@
     },
     "autoload": {
         "files": [ "command.php" ]
+    },
+    "extras": {
+        "commands": [
+            "media sideload"
+        ]
     }
 }
