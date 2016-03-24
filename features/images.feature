@@ -12,7 +12,7 @@ Feature: Sideloading Images
       1
       """
 
-    When I run `wp media sideload images --domain='s.wordpress.org'`
+    When I run `wp media sideload --domain='s.wordpress.org'`
     Then STDERR should be empty
 
     When I run `wp post list --s='s.wordpress.org' --format=count`
