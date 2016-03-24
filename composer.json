@@ -1,12 +1,12 @@
 {
-    "name": "danielbachhuber/wp-cli-media-sideload-command",
-    "description": "Sideload external media into WordPress",
+    "name": "runcommand/media-command",
+    "description": "Sideload remote images and other media into WordPress",
     "license": "MIT",
     "authors": [
         {
             "name": "Daniel Bachhuber",
             "email": "daniel@handbuilt.co",
-            "homepage": "http://handbuilt.co",
+            "homepage": "http://runcommand.io",
             "role": "Developer"
         }
     ],
@@ -15,6 +15,6 @@
 
     },
     "autoload": {
-        "files": [ "wp-cli-media-sideload-command.php" ]
+        "files": [ "command.php" ]
     }
 }
