@@ -1,5 +1,5 @@
 {
-    "name": "runcommand/media-command",
+    "name": "runcommand/media-sideload",
     "description": "Sideload remote images and other media into WordPress",
     "license": "MIT",
     "authors": [
