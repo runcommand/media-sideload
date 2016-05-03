@@ -1,7 +1,7 @@
 runcommand/media-sideload
 =========================
 
-Sideload remote images and other media into WordPress
+Sideload embedded images, and update post content references.
 
 [![Build Status](https://travis-ci.org/runcommand/media-sideload.svg?branch=master)](https://travis-ci.org/runcommand/media-sideload)
 
@@ -14,13 +14,22 @@ Quick links: [Using](#using) | [Installing](#installing) | [Contributing](#contr
 wp media sideload --domain=<domain> [--post_type=<post-type>] [--verbose]
 ~~~
 
+Searches through the post_content field for images hosted on remote domains,
+downloads those it finds into the Media Library, and updates the reference
+in the post_content field.
+
+In more real terms, this command can help "fix" all post references to
+<img src="http://remotedomain.com/image.jpg" /> by downloading the image into
+the Media Library, and updating the post_content to instead use
+<img src="http://correctdomain.com/image.jpg" />
+
 **OPTIONS**
 
 	--domain=<domain>
-		Only sideload images hosted on a specific domain.
+		Specify the domain to sideload images from, because you don't want to sideload images you've already imported.
 
 	[--post_type=<post-type>]
-		Only sideload images embedded in a specific post type.
+		Only sideload images embedded in the post_content of a specific post type.
 
 	[--verbose]
 		Show more information about the process on STDOUT.

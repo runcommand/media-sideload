@@ -1,6 +1,6 @@
 {
     "name": "runcommand/media-sideload",
-    "description": "Sideload remote images and other media into WordPress",
+    "description": "Sideload embedded images, and update post content references.",
     "license": "MIT",
     "authors": [
         {
