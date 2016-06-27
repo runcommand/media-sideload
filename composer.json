@@ -1,13 +1,13 @@
 {
     "name": "runcommand/media-sideload",
     "description": "Sideload embedded images, and update post content references.",
+    "homepage": "https://runcommand.io/wp/media-sideload/",
     "license": "MIT",
     "authors": [
         {
             "name": "Daniel Bachhuber",
-            "email": "daniel@handbuilt.co",
-            "homepage": "http://runcommand.io",
-            "role": "Developer"
+            "email": "daniel@runcommand.io",
+            "homepage": "https://runcommand.io"
         }
     ],
     "minimum-stability": "dev",
