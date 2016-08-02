@@ -12,9 +12,9 @@ if ( ! class_exists( 'WP_CLI' ) ) {
  * in the post_content field.
  *
  * In more real terms, this command can help "fix" all post references to
- * <img src="http://remotedomain.com/image.jpg" /> by downloading the image into
+ * `<img src="http://remotedomain.com/image.jpg" />` by downloading the image into
  * the Media Library, and updating the post_content to instead use
- * <img src="http://correctdomain.com/image.jpg" />
+ * `<img src="http://correctdomain.com/image.jpg" />`.
  *
  * ## OPTIONS
  *
