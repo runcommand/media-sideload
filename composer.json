@@ -1,6 +1,7 @@
 {
     "name": "runcommand/media-sideload",
     "description": "Sideload embedded images, and update post content references.",
+    "type": "wp-cli-package",
     "homepage": "https://runcommand.io/wp/media-sideload/",
     "license": "MIT",
     "authors": [
